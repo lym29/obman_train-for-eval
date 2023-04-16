@@ -12,7 +12,8 @@ from mano_train.objectutils.objectio import load_obj
 from mano_train.netscripts.savemano import load_batch_info
 
 closed_hand = "assets/mano/closed_mano.obj"
-_, hand_faces = load_obj(closed_hand, normalization=False)
+hand_faces = []
+# _, hand_faces = load_obj(closed_hand, normalization=False)
 
 
 def intersect_vox(obj_mesh, hand_mesh, pitch=0.01):
